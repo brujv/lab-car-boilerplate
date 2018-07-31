@@ -1,1 +1,362 @@
-<!-- Suelta tus manos y tu mente para solucionar este reto -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lab-car</title>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <nav class="nav nav-pills">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div id="logo" class="navbar-brand img-responsive">
+          <img src="assets/images/logoForma.png" alt="">
+        </div>
+      </div>
+      <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-9">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="#">Viaja</a>
+          </li>
+          <li>
+            <a href="#">Conduce</a>
+          </li>
+          <li>
+            <a data-toggle="modal" data-target="#inicio-sesion" href="#">Inicia Sesión</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ 
+  <section id="slider" class="img-responsive col-md-12 col-xs-12">
+    
+    
+    <div id="bg-slider" class="container col-md-offset-7 col-md-5 col-sm-offset-3 col-sm-9 col-xs-offset-3 col-xs-9">
+
+      <div class="txt-slider-oculto">
+        <h2>Comienza a viajar <br>con
+        <img src="assets/images/logoBlanco.png" alt=""></h2>
+        <button class="btn btn-default" type="submit">Descarga la App</button>
+      </div>
+      
+
+      <div class="txt-slider">
+        <h2>Disfruta del viaje</h2>
+        <h2>Eres dueño de tu tiempo.</h2>
+        <h4>Viaja con <img src="assets/images/logoBlanco.png" alt=""></h4>
+        <button class="btn btn-default" type="submit" data-toggle="modal" data-target="#registro">REGISTRATE</button>
+
+        <div class="modal fade" id="inicio-sesion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img class="center-block img-responsive" id="perfil" src="assets/images/perfil.jpg" alt="imagen de perfil">
+              </div>
+              <div class="modal-footer">
+                <div class="container">
+                  <div class="info-modal">
+                    <div class="user input-group">
+                      <span class="input-group-addon glyphicon glyphicon-user" id="sizing-addon2"></span>
+                      <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon2">
+                    </div>
+                    <div class="user input-group">
+                      <span class="input-group-addon glyphicon glyphicon-lock" id="sizing-addon2"></span>
+                      <input type="password" class="form-control" placeholder="Password" aria-describedby="sizing-addon2">
+                    </div>
+                    <button class="btn btn-default center-block inicio" type="submit" data-toggle="modal" data-target="#registro">Sign In</button>
+                    <p>Forgot password? <a href="#">Click here</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="modal fade" id="registro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="head modal-header">
+                <button class="btn btn-default btn-registro center-block col-md-12" type="submit" data-toggle="modal" data-target="#registro">¿Ya tienes una cuenta?</button>
+                <p class="col-md-12">Ó CREA UNA CUENTA NUEVA</p>
+              </div>
+              <div class="md-body modal-body">
+                <div class="box input-group col-md-12">
+                  <span class="input-group-addon" id="sizing-addon2"></span>
+                  <input type="text" class="form-control" placeholder="Nombre" aria-describedby="sizing-addon2">
+                  <span class="input-group-addon" id="sizing-addon2"></span>
+                  <input type="text" class="form-control" placeholder="Apellido" aria-describedby="sizing-addon2">
+                </div>
+                <div class="box input-group col-md-12">
+                  <span class="input-group-addon" id="sizing-addon2"></span>
+                  <input type="text" class="form-control" placeholder="laboratoria@laboratoria.cl" aria-describedby="sizing-addon2">
+                </div>
+                <div class="box input-group col-md-12">
+                  <span class="input-group-addon" id="sizing-addon2"></span>
+                  <input type="text" class="form-control" placeholder="Teléfono" aria-describedby="sizing-addon2">
+                </div>
+                <div class="box input-group col-md-12">
+                  <span class="input-group-addon" id="sizing-addon2"></span>
+                  <input type="text" class="form-control" placeholder="Contraseña" aria-describedby="sizing-addon2">
+                </div>
+                <div class="box input-group col-md-12">
+                  <span class="input-group-addon" id="sizing-addon2"></span>
+                  <input type="text" class="form-control" placeholder="Ciudad" aria-describedby="sizing-addon2">
+                </div>
+                <div class="box input-group col-md-12">
+                  <span class="input-group-addon" id="sizing-addon2"></span>
+                  <input type="text" class="form-control" placeholder="(Opional) Código de invitación" aria-describedby="sizing-addon2">
+                </div>
+                <div class="box input-group dropdown col-md-12">
+                  <button class="col-md-12 like" id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    ¿Cómo te enteraste de nosotros?
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dLabel">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Televisión</a></li>
+                    <li><a href="#">Diario</a></li>
+                  </ul>
+                </div>
+                <button class="box btn btn-default btn-enviar center-block col-md-12">ENVIAR</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="modal fade" id="registro-conductores" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="md-body-cond modal-body">
+                <div class="box input-group dropdown col-md-12">
+                  <p>Tienes vehículos de 4 puertas? </p>
+                  <button class="col-md-12 like" id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Selecciona...
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dLabel">
+                    <li>
+                      ...
+                    </li>
+                  </ul>
+                </div>
+                <div class="box input-group dropdown col-md-12">
+                  <p>Marca de tu vehículo </p>
+                  <button class="col-md-12 like" id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Selecciona...
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dLabel">
+                    <li>
+                      ...
+                    </li>
+                  </ul>
+                  <p>No ves tu vehículo en la lista? Envíanos un correo a hola@labcar.cl</p>
+                </div>
+                <div class="box input-group dropdown col-md-12">
+                  <p>Modelo del vehículo </p>
+                  <button class="col-md-12 like" id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Selecciona...
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dLabel">
+                    <li>
+                      ...
+                    </li>
+                  </ul>
+                </div>
+                <div class="box input-group dropdown col-md-12">
+                  <p>Año del vehículo </p>
+                  <button class="col-md-12 like" id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Selecciona...
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dLabel">
+                    <li>
+                      ...
+                    </li>
+                  </ul>
+                </div>
+                <div class="box input-group col-md-12">
+                  <input type="text" class="form-control" placeholder="Número de la matrícula" aria-describedby="sizing-addon2">
+                  <p>La información de la matrícula ayuda a los clientes a identificar tú vehículo</p>
+                </div>
+                <button class="box btn btn-default btn-enviar center-block col-md-12">ENVIAR</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+
+      </div>
+      <div class="medio">
+        <div class="row">
+          <hr id="hr1" class="col-md-3">
+          <span class="col-md-3">O bien</span>
+          <hr id="hr2" class="col-md-3">
+        </div>
+        <button class="btn btn-default" type="submit" data-toggle="modal" data-target="#registro-conductores">Conviértete en un conductor</button>
+      </div>
+    </div>
+  </section>
+  
+  <section id="info">
+    <div class="container">
+      <div id="brd-info" class="col-8">
+        <div id="img-smartphone" class="col-md-6">
+          <h2 class="col-xs-12 col-sm-12">La nueva app</h2>
+          <img class="img-responsive" src="assets/images/iPhone6Plus.png" alt="iPhone6Plus">
+        </div>
+        <div id="txt-app" class="col-md-6">
+          <h2>Descarga la nueva app</h2>
+          <p>La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
+          <p>Con sólo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu condutor sabe exáctamente a dónde ir.</p>
+        </div>
+      </div>
+      <div id="txt-app-oculto" class="col-md-12">
+        <h2>Llega a tu destino aún más rápido.</h2>
+      </div>
+    </div>
+  </section>
+
+  <section id="conductor">
+    <div id="txt-conductor" class="jumbotron col-md-offset-7 col-md-5">
+      <div class="container">
+        <h2>Conduce cuando quieras</h2>
+        <p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
+        <p>
+          <a class="btn-conductor btn btn-lg" href="#" role="button">Conviértete en conductor</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section id="mapa"> 
+   
+    <div class="container">
+      <div class="col-md-6 col-sm-12 col-xs-12">
+        <div class="container">
+          <div class="cont-tarifas">
+            <h2>Tarifas</h2>
+            <p>Consulta las tarifas LabCar aquí</p>
+            <div id="buscadores">
+              <div class="col-md-12">
+                <img src="assets/images/shape.png" alt="">
+                <input type="text" name="punto" id="txt-punto" placeholder="Ingrese su punto de partida">
+              </div>
+              <div class="col-md-12">
+                <img src="assets/images/shape2.png" alt="">
+                <input type="text" name="punto" id="txt-punto" placeholder="Ingrese su destino">
+              </div>
+      
+            </div>
+          </div>
+          <button class="btn-rota btn btn-default">¡ Traza tu ruta !</button>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12 col-xs-12">
+        <div class="mapa container"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467689.7971944828!2d-46.8754915172196!3d-23.68216038895823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!5e0!3m2!1spt-BR!2sbr!4v1532973530519" width="390" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <div id="map"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div id="logo" class="col-md-12">
+          <img src="assets/images/logoBlanco.png" alt="LabCar">
+        </div>
+        <div id="div-footer" class="col-md-12 col-sm-12 col-xs-12">
+          <div id="icones" class="col-md-3 col-sm-6 col-xs-6">
+            <span class="fab fa-facebook-f"></span>
+            <span class="fab fa-twitter"></span>
+            <span class="fab fa-linkedin"></span>
+            <span class="fab fa-apple"></span>
+            <span class="fab fa-google-play"></span>
+          </div>
+          <div class="via col-md-3 col-sm-6 col-xs-6">
+            <ul>
+              <li>
+                <a href="#">Viaja</a>
+              </li>
+              <li>
+                <a href="#">Conduce</a>
+              </li>
+              <li>
+                <a href="#">Ciudades</a>
+              </li>
+              <li>
+                <a href="#">Ciudades</a>
+              </li>
+              <li>
+                <a href="#">Entregas</a>
+              </li>
+              <li>
+                <a href="#">¿Cómo funciona?</a>
+              </li>
+              <li>
+                <a href="#">Países</a>
+              </li>
+              <li>
+                <a href="#">Seguridad</a>
+              </li>
+            </ul>
+          </div>
+          <div class="opor col-md-3">
+            <ul>
+              <li>
+                <a href="#">Oportunidades</a>
+              </li>
+              <li>
+                <a href="#">Nuestra Historia</a>
+              </li>
+              <li>
+                <a href="#">API de LabCar</a>
+              </li>
+              <li>
+                <a href="#">Eventos</a>
+              </li>
+              <li>
+                <a href="#">Desarrolladores</a>
+              </li>
+              <li>
+                <a href="#">Servicios</a></li>
+              <li>
+                <a href="#">Laboratoria</a></li>
+              <li>
+                <a href="#">Coders</a>
+              </li>
+            </ul>
+          </div>
+          <div class="apps col-md-3 col-sm-6 col-xs-6">
+            <img src="assets/images/appstore.png" alt="AppStore">
+            <img src="assets/images/enBadgeWebGeneric.png" alt="GooglePlay">
+          </div>
+        </div>
+        <div id="labcar" class="col-md-12">
+           <p>© 2018 LabCar Technologies Inc.</p>
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+  
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
